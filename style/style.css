@@ -174,7 +174,69 @@ body {
   background-color: #219150;
 }
 
-/* ✅ Mobile Responsive: 2 columns */
+      /* plant-lover-section */
+
+
+.plant-lover-section {
+  padding: 60px 20px;
+
+}
+
+.plant-lover-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* মোবাইল রেস্পন্সিভ */
+}
+
+.plant-image-wrapper {
+  position: relative;
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.plant-image-wrapper img.flower-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.plant-image-wrapper img.trusted-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+}
+
+.plant-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.plant-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.plant-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.plant-text ul li {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+        /* Mobile Responsive */
 
 
 @media (max-width: 576px) {
@@ -227,5 +289,20 @@ body {
 
   .plants-header p {
     font-size: 16px;
+  }
+
+       /* plant-lover-container section */
+
+  .plant-lover-container {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .plant-text {
+    max-width: 100%;
+  }
+
+  .plant-text h2 {
+    text-align: left;
   }
 }
