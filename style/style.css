@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +8,14 @@ body {
 }
 
 /* Share Style */
-.yellow{
-  color: #E95A08;
+.yellow {
+  color: #e95a08;
 }
 
 /* Navbar Styles */
 .navbar {
   padding: 20px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .nav-container {
   max-width: 1200px;
@@ -38,7 +37,7 @@ body {
 .nav-menu li a {
   text-decoration: none;
   font-size: 16px;
-  color: #6C6C6C;
+  color: #6c6c6c;
 }
 
 /* Home link style */
@@ -53,13 +52,6 @@ body {
   font-weight: bold;
   color: #000000;
   font-size: 18px;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .nav-menu li:not(.cart) {
-    display: none;
-  }
 }
 
 /* Banner Styles */
@@ -83,14 +75,14 @@ body {
 }
 .banner-text p {
   font-size: 16px;
-  color: #5A5A5A;
+  color: #5a5a5a;
 }
 .banner-image img {
   width: 100%;
   max-width: 500px;
 }
 
-      /* Banar section */
+/* Banar section */
 
 /* Section Container */
 .plants-section {
@@ -130,8 +122,7 @@ body {
   text-align: center;
   height: 490px;
   width: 270px;
-  box-shadow: 0 4px 4px rgba(0,0,0,0.1);
-
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .plant-card:hover {
@@ -159,7 +150,7 @@ body {
 }
 
 .plant-card button {
-  background-color: #E95A08;
+  background-color: #e95a08;
   color: #fff;
   font-weight: 600;
   border: none;
@@ -174,12 +165,10 @@ body {
   background-color: #219150;
 }
 
-      /* plant-lover-section */
-
+/* plant-lover-section */
 
 .plant-lover-section {
   padding: 60px 20px;
-
 }
 
 .plant-lover-container {
@@ -234,9 +223,9 @@ body {
   line-height: 1.6;
 }
 
-        /* join section */
+/* join section */
 
-    .join-top {
+.join-top {
   padding: 60px 20px 40px;
   text-align: center;
 }
@@ -247,14 +236,13 @@ body {
   color: #272727;
 }
 
-
 .join-header p {
   font-size: 18px;
   color: #6d6d6d;
   max-width: 600px;
   margin: 20px auto 0;
   line-height: 1.6;
-}  
+}
 
 .deal-container {
   display: flex;
@@ -291,7 +279,6 @@ body {
   overflow: hidden;
   position: relative;
 }
-
 
 .deal-text {
   position: absolute;
@@ -368,16 +355,16 @@ body {
   padding: 12px 20px;
   font-size: 16px;
   color: white;
-  background-color: #E95A08;
+  background-color: #e95a08;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 100px;
 }
 
-        /* Footer section */
+/* Footer section */
 
-    .footer {
+.footer {
   max-width: 1440px;
   margin: 50px auto;
   display: flex;
@@ -409,7 +396,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 .footer-column ul {
   list-style: none;
   padding: 0;
@@ -422,7 +408,7 @@ body {
   cursor: pointer;
   margin-top: 30px;
 }
-.footer-icons{
+.footer-icons {
   margin-top: 30px;
 }
 .footer-icons img {
@@ -432,10 +418,8 @@ body {
   cursor: pointer;
 }
 
-
 /* Mobile Responsive Design for max-width: 576px */
 @media (max-width: 576px) {
-
   /*  Navbar */
   .navbar {
     flex-direction: row;
@@ -443,17 +427,18 @@ body {
     padding: 10px 20px;
   }
 
-  .nav-items,
-  .nav-menu {
+  .hide {
     display: none;
   }
 
   .nav-logo {
-    flex: 1;
+    display: flex;
+    align-items: center;
   }
 
-  .nav-cart {
-    display: block;
+  .cart {
+    display: flex;
+    align-items: center;
   }
 
   /* Banner */
@@ -472,15 +457,26 @@ body {
     text-align: left;
   }
 
-/* Updated Plant Section for Mobile */
-.plant-grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  padding: 0 10px;
-  margin: 0 auto;
-  max-width: 100%;
-}
   /* Plant Lover Section */
+
+  .plants-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 12px;
+    justify-content: center;
+    margin-left: 140px;
+    box-sizing: border-box;
+  }
+  .plant-card {
+    width: 100%;
+  }
+  .plant-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
   .plant-lover {
     flex-direction: column;
     padding: 20px;
@@ -519,6 +515,9 @@ body {
     height: 200px;
   }
 
+  .right-column {
+    margin-left: 150px;
+  }
   .right-column .tall {
     height: 425px;
   }
@@ -551,19 +550,4 @@ body {
     padding: 0 20px;
     gap: 30px;
   }
-
-  .footer-column {
-    min-width: unset;
-    text-align: center;
-  }
-
-  .footer-icons {
-    justify-content: center;
-  }
-
-  .footer-icons img {
-    margin: 0 5px;
-  }
-
 }
-
